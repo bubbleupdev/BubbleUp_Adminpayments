@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+		<BubbleUp_Adminpayments>
+			<version>0.1.0</version>
+		</BubbleUp_Adminpayments>
+	</modules>
+	<global>
+		<models>
+            <adminpayments>
+                <class>BubbleUp_Adminpayments_Model</class>
+            </adminpayments>
+        </models>
+        <events>
+        	<!-- This runs our code when the system is deciding whether or not to show a given method. -->
+            <payment_method_is_active>
+                <observers>
+                    <adminpayments_payment_method_is_active>
+                        <class>BubbleUp_Adminpayments_Model_Observer</class>
+                        <type>singleton</type>
+                        <method>onEvent</method>
+                    </adminpayments_payment_method_is_active>
+                </observers>
+            </payment_method_is_active>
+        </events>
+	</global>
+	<default>
+        <payment>
+            <adminpayments>
+                <!-- by default, allow check/money order to be admin only. -->
+                <adminmethods>checkmo</adminmethods>
+            </adminpayments>
+        </payment>
+    </default>
+	
+</config>

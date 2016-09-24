@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <BubbleUp_Adminpayments>
+            <active>true</active>
+            <codePool>local</codePool>
+        </BubbleUp_Adminpayments>
+    </modules>
+</config>
