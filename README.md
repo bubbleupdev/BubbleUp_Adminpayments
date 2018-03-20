@@ -3,7 +3,7 @@
 This module will allow you to enable certain payment methods for use when creating orders from the admin side, without enabling them on the front-end. The most common use-case is allowing `Check/Money Order` to be used on the admin side, without allowing it on the front-end, so that administrators can create orders without entering credit card info.
 
 ## Installation and Setup Instructions
-1. Download [the zip file], or git clone the repo
+1. Download [the zip file](https://github.com/bubbleupdev/BubbleUp_Adminpayments/archive/master.zip), or `git clone` the repo
 2. Copy all of the contents from the `BubbleUp_Adminpayments` directory into your Magento Root directory. This can be done with drag-and-drop.
 3. Clear caches if enabled.
 4. In the admin panel, go to `System`=>`Configuration`=>`Payment Methods`=>`Frontend Method Restrictions`.
